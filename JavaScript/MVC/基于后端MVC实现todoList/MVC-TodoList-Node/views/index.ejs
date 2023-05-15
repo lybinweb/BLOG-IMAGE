@@ -1,0 +1,22 @@
+<%- include('top.ejs', {
+    styles
+}) %>
+
+<div id="id">
+    <%- include('todoForm.ejs') %>
+    <div>
+        <ul id="list">
+            <% todoList.map(item => { %>
+                <%- include('todoItem.ejs', {
+                    item
+                }) %>
+            <% }) %>
+        </ul>
+    </div>
+</div>
+
+<%- include('script.ejs, {
+    scripts
+}) %>
+
+<%- include('bottom.ejs') %>

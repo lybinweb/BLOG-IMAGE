@@ -1,0 +1,16 @@
+<%- include('top.ejs') %>
+
+<div id="app">
+    <h1><%= todo.title %></h1>
+    <p>Create at <%= todo.createAt %> </p>
+    <p>completed: <%= todo.completed ? 'Yes' : 'No' %></p>
+    <p>Content: <%= todo.content %></p>
+    <p>
+        <button
+            data-id="<%= todo._id %>"
+            id="removeBtn"
+        >REMOVE</button>
+    </p>
+</div>
+
+<%- include('bottom.ejs') %>

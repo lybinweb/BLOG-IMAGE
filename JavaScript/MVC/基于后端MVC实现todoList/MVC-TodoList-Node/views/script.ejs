@@ -1,0 +1,3 @@
+<% script.map(item => { %>
+    <script src="<%= item.URL %>" type="<%= item.isModule ? 'module' : '' %>"></script>
+<% }) %>

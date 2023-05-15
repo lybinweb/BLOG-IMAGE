@@ -1,0 +1,18 @@
+<li>
+    <input
+        type="checkbox"
+        <%= item.completed ? 'checked' : "" %>
+        data-id="<%= item._id %>"
+        class="toggle-check-box"
+    />
+    <a
+        href="http://localhost:8080/detail/<%= item._id %>"
+        class="<%= item.completed ? 'completed' : '' %>"
+    >
+        <%= item.title %>
+    </a>
+    <button
+        data-id="<%= item._id %>"
+        class="remove-btn"
+    >REMOVE</button>
+</li>
