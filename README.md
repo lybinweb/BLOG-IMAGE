@@ -5,5 +5,3 @@
 - `JavaScript`
 - `Vue2|Vue3`
 - `React`
-
-[](https://github.com/lybinweb/JSplusplus/tree/develop/JavaScript/MVP)
