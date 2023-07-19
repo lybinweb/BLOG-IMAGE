@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .scroll-wrapper {
+        height: 100vh;
+        overflow-y: auto;
+      }
+
+      .list-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        border-bottom: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="scroll-wrapper" id="J_scrollWrapper">
+        <div class="list-wrapper"></div>
+      </div>
+    </div>
+    
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
