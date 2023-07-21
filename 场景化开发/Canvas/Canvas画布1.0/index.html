@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+
+    .tool-bar {
+      position: absolute;
+      left: 100px;
+      top: 100px;
+      padding: 10px 20px;
+      background: #efcdd4;
+      border-radius: 20px;
+    }
+
+    .eraser-circle {
+      display: none;
+      position: fixed;
+      border-radius: 50%;
+      border: 1px solid #dddddd;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="can"></canvas>
+
+  <div class="tool-bar">
+    <h2>画板V1.0</h2>
+    <p>
+      <label for="colorInput">选择颜色</label>
+      <input type="color" id="colorInput" />
+    </p>
+    <!--  -->
+    <p>
+      <label for="lineWidthRange">选择画笔粗细</label>
+      <input id="lineWidthRange" type="range" min="1" max="50" value="1" step="1" />
+      <span id="lineWidthValue">1</span>
+    </p>
+
+    <p>
+      <label>清除画布</label>
+      <input type="button" id="clearAllBtn" value="CLEAR ALL">
+    </p>
+
+    <p>
+      <label>启用橡皮擦</label>
+      <input type="button" id="eraserBtn" value="SETUP ERASER">
+
+      <input id="eraserLineWidthRange" type="range" min="5" max="50" value="5" step="1" />
+      <span id="eraserLineWidthValue">5</span>
+      <span id="eraserCircle" class="eraser-circle"></span>
+    </p>
+  </div>
+
+  <script src="./index.js"></script>
+  <!-- <script src="./demo.js"></script> -->
+</body>
+
+</html>
